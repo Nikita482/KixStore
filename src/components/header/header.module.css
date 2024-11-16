@@ -1,0 +1,106 @@
+.wrapper{
+    width: 100vw;
+    height: 528px;
+    background-color: #484283;
+    position: relative;
+}
+
+.name{
+    width: 70%;
+    height: auto;
+    text-align: center;
+    font-size: 10vw;
+    font-weight: 700;  
+    font-style: italic;  /* курсив */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(94, 94, 94);
+}
+
+
+.box{
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.boxHeader{
+    width: 100%;
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(94, 94, 94);
+}
+.boxHeader h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.headerMenu{
+    width: 80%;
+    height: 100%;
+    display: flex;
+}
+.menuItem{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    transition-duration: 300ms;
+}
+
+.menuItem:hover{
+    font-size: 16px;
+}
+
+.itemBasket{
+    display: flex;
+    align-items: center;
+}
+.itemBasket ion-icon{
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+
+
+.boxMain{
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+
+.mainTextH{
+    font-weight: 400;
+}
+
+.mainTextP{
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+.mainBtn{
+    width: 250px;
+    height: 60px;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 30px;
+    background-color: #F14F4F;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    transition-duration: 300ms;
+}
+.mainBtn:hover{
+    transform: scale(1.1);
+}
