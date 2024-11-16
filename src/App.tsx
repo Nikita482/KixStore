@@ -1,4 +1,5 @@
 // import styles from "./App.module.css"
+
 import Header from "./components/header/header"
 import Catalog from "./components/catalog/catalog"
 
@@ -8,7 +9,6 @@ const App: React.FC = () => {
     <>
       <Header/>
       <Catalog/>
-      
     </>
   )
 }
