@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://nikita482.github.io/KixStore/", 
+  "homepage": "https://nikita482.github.io/KixStore/",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
