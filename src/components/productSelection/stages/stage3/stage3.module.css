@@ -1,0 +1,153 @@
+.header{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    color: #444B58;
+}
+.header h2{
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+.header h4{
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+
+.main{
+    width: 90%;
+    height: 70%;
+    margin: 0 auto;
+    border-top: 1px solid rgb(94, 94, 94);
+    border-bottom: 1px solid rgb(94, 94, 94);
+    color: white;
+    position: relative;
+}
+.mainGetInfo{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #DBBBA9;
+}
+.mainGetInfo h1{
+    margin: 20px 0 10px 20px;
+}
+.mainGetInfo h3{
+    margin: 10px 0 10px 20px;
+    font-weight: normal;
+}
+
+.infoPole{
+    display: flex;
+    flex-direction: column;
+}
+.poleName, .poleEmail, .infoPole button{
+    width: 500px;
+    height: 60px;
+    font-size: 16px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.poleName{
+    margin: 20px;
+}
+.poleEmail{
+    margin-left: 20px;
+}
+.infoPole button{
+    width: 220px;
+    height: 60px;
+    background-color: #F14F4F;
+    margin: 20px;
+    color: white;
+    font-size: 16px;
+    transition-duration: 300ms ;
+}
+.infoPole button:hover{
+    transform: scale(1.1);
+}
+
+
+.footer{
+    flex: 1;
+    color: #444B58;
+}
+.footerWrapper{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerWrapper h3{
+    font-weight: normal;
+}
+
+
+
+
+
+@media (max-width: 680px) {
+    .poleName, .poleEmail{
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .header h2{
+        font-size: 20px;
+    }
+
+    .mainGetInfo h1{
+        font-size: 28px
+    }
+}
+
+@media (max-width: 500px) {
+    .header h2{
+        padding-top: 20px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .header h4{
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .mainGetInfo h3{
+        font-size: 18px;
+    }
+
+    .mainGetInfo h1{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .poleName, .poleEmail{
+        width: 80%;
+        height: 50px;
+    }
+}
+
+@media (max-width: 520px) {
+    .header h2, .header h4, .main h3{
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .infoPole button{
+        width: 170px;
+        height: 40px;
+    }
+}
+
+
+

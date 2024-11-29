@@ -11,7 +11,7 @@
     text-align: center;
     font-size: 10vw;
     font-weight: 700;  
-    font-style: italic;  /* курсив */
+    font-style: italic;  
     position: absolute;
     top: 60%;
     left: 50%;
@@ -56,9 +56,18 @@
     font-size: 14px;
     transition-duration: 300ms;
 }
-
 .menuItem:hover{
     font-size: 16px;
+}
+.menuItem a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #B2B5BB;
+    text-decoration: none;
+    
 }
 
 .itemBasket{
@@ -69,6 +78,68 @@
     font-size: 25px;
     margin-left: 5px;
 }
+
+.btnMenu{
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition-duration: 300ms;
+}
+.btnMenu:hover{
+    transform: scale(1.1);
+}
+.windowMenu{
+    width: 300px;
+    height: auto;
+    background-color: #524a95;
+    color: white;
+    box-shadow: -5px 0 8px rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: fixed;
+    top: 30px;
+    right: -330px;
+    display: block;
+    z-index: 10;
+}
+.winItem{
+    margin: 20px 10px 20px 10px;
+    transition-duration: 300ms;
+    display: flex;
+}
+.winItem a{
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.winItem:hover{
+    transform: scale(1.1);
+}
+.windowCross{
+    position: absolute;
+    right: 10px;
+    transform: rotate(45deg);
+    font-size: 40px;
+    color: white;
+    transition-duration: 300ms;
+}
+.windowCross:hover{
+    transform: rotate(45deg) scale(1.1);
+}
+.windowName{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 
 
@@ -85,22 +156,129 @@
 }
 
 .mainTextP{
+    width: 500px;
     font-weight: 300;
-    margin-top: 30px;
+    margin-top: 30px; 
 }
 
 .mainBtn{
     width: 250px;
     height: 60px;
     font-weight: 300;
-    font-size: 16px;
     margin-top: 30px;
     background-color: #F14F4F;
     color: white;
     border-radius: 10px;
     border: none;
     transition-duration: 300ms;
+    display: flex;
 }
 .mainBtn:hover{
     transform: scale(1.1);
+}
+.mainBtn a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 1000px) {
+    .btnMenu{
+        display: flex;
+    }
+    .windowMenu{
+        display: block;
+    }
+    .headerMenu{
+        display: none;
+    }
+    .name{
+        font-size: 15vw;
+    }
+    .boxMain{
+        height: 80%;
+    }
+    .wrapper{
+        height: 400px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .mainTextH{
+        font-size: 2vw;
+    }
+    .mainBtn{
+        width: 200px;
+        height: 50px;
+    }
+    .wrapper{
+        height: 350px;
+    }
+    .windowMenu{
+        top: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .mainTextH{
+        font-size: 2.5vw;
+    }
+    .mainTextP{
+        width: 100%;
+    }
+
+    .name{
+        top: 70%;
+        color: rgb(94, 94, 94, 0.8);
+    }
+
+    .mainTextP p{
+        color: #cfd2d9;
+    }
+}
+
+@media (max-width: 300px) {
+    .windowMenu{
+        width: 95vw;
+    }
+    .windowName{
+        justify-content: start;
+        padding-left: 15px;
+    }
+}
+
+
+
+@media (max-height: 500px) {
+    .winItem{
+        margin: 10px;
+    }
+}
+
+@media (max-height: 420px) {
+    .winItem{
+        margin: 5px 10px;
+    }
+
+    .windowName{
+        height: 50px;
+    }
+}
+
+@media (max-height: 370px) {
+    .winItem{
+        margin: 3px 10px;
+    }
+
+    .windowName{
+        height: 40px;
+    }
 }

@@ -1,0 +1,237 @@
+.header{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    color: #444B58;
+}
+.header h2{
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+.header h4{
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.main{
+    width: 90%;
+    height: 70%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(94, 94, 94);
+    border-top: 1px solid rgb(94, 94, 94);
+    display: flex;
+    flex-direction: column;
+    color: #444B58;
+}
+.main h3{
+    font-weight: normal;
+    margin: 10px 0;
+}
+.mainItems{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.item{
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.itemFoto{
+    background-image: url("/public/fotoProductSelection.png");
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+.wrapperBottom{
+    display: flex;
+    align-items: center;
+}
+.checkbox {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+    border: 2px solid #DBBBA9; 
+    background-color: transparent; 
+    appearance: none; 
+    position: relative;
+    border-radius: 7px; 
+}
+
+.checkbox:checked {
+    border-color: #DBBBA9; 
+}
+
+.checkbox:checked::before {
+    content: "✔"; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 20px;
+    color: #DBBBA9; 
+}
+
+
+.footer{
+    flex: 1;
+    color: #444B58;
+}
+.footerWrapper{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerWrapper h3{
+    font-weight: normal;
+}
+.footerWrapper button{
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #444B58;
+    color: #444B58;
+    border-radius: 5px;
+    font-size: 16px;
+    transition-duration: 300ms;
+}
+.footerWrapper button:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+@media (max-width: 1300px) {
+    .itemFoto{
+        background-size: 140%;
+        background-position: -50px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .main{
+        height: 70%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main{
+        height: 65%;
+    }
+}
+
+@media (max-width: 850px) {
+    .main{
+        height: 60%;
+    }
+    
+    .itemFoto{
+        background-position: -40px;
+    }
+}
+
+@media (max-width: 650px) {
+    .header h2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .main{
+        height: 70%;
+    }
+
+    .item{
+        width: 45%;
+        height: 30%;
+    }
+}
+
+@media (max-width: 550px) {
+    .main{
+        height: 70%;
+    }
+}
+
+@media (max-width: 530px) {
+    .main{
+        height: 65%;
+    }
+}
+
+@media (max-width: 500px) {
+    .header h2{
+        padding-top: 20px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .header h4{
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .mainName{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 520px) {
+    .header h2, .header h4, .main h3{
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .main{
+        height: 70%;
+    }
+
+    .itemFoto{
+        background-position: -30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .footerWrapper button{
+        width: 170px;
+        height: 40px;
+    }
+
+    .main{
+        height: 68%;
+    }
+}
+
+@media (max-width: 400px) {
+    .mainItems{
+        overflow-x: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item{
+        width: 80%;
+        height: 50%;
+        margin-right: 20px;
+    }
+
+    .main{
+        height: 65%;
+    }
+}
+
+@media (max-width: 300px) {
+    .main{
+        height: 60%;
+    }
+}

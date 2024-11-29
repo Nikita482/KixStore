@@ -2,21 +2,31 @@ import styles from "./App.module.css"
 
 import Header from "./components/header/header"
 import Catalog from "./components/catalog/catalog"
+import AboutUs from "./components/aboutUs/aboutUs"
+import ProductSelection from "./components/productSelection/productSelection"
+import Team from "./components/team/team"
+import Questions from "./components/questions/questions"
+import Contacts from "./components/Contacts/Contacts"
+import Footer from "./components/footer/footer"
 
 
 const App: React.FC = () => {
+
+  // сделать 2 страницу с всем товаром
+
   return(
     <>
       <Header/>
       <Catalog/>
-      <div className={styles.marginBottom}></div>
+      <AboutUs/>
+      <ProductSelection/>
+      <Team/>
+      <Questions/>
+      <Contacts/>
+      <Footer/>
     </>
   )
 }
-
-// в проектк используется:
-// react-router-dom
-// Redux
 
 
 export default App

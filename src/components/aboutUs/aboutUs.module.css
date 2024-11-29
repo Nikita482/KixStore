@@ -1,0 +1,119 @@
+.wrapper{
+    width: 100vw;
+    height: 600px;
+    background-color: #484283;
+    margin-top: 30px;
+}
+
+.margin{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+.text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.wrapperInfo{
+    width: 70%;
+}
+.text h2{
+    margin-bottom: 20px;
+}
+
+.foto{
+    width: 50%;
+    height: 100%;
+    background-image: url("/public/fotoAboutUs.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    clip-path: polygon(30% 0, 100% 0, 70% 100%, 0% 100%);
+    position: absolute;
+    right: 0;
+}
+
+
+
+
+
+@media (max-width: 1300px) {
+    .wrapper{
+        height: 500px;
+    }
+
+    .foto{
+        width: 60%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .wrapper{
+        height: 400px;
+    }
+    .text{
+        width: 65%;
+        height: 100%;
+        justify-content: start;
+    }
+}
+
+@media (max-width: 650px) {
+    .wrapperInfo h2{
+        font-size: 20px;
+    }
+    
+    .wrapperInfo p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 550px) {
+    .foto{
+        width: 100%;
+        opacity: 0.1;
+    }
+
+    .text{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .wrapperInfo{
+        width: 80%;
+    }
+
+    .wrapperInfo h2{
+        font-size: 28px;
+    }
+    
+    .wrapperInfo p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 350px) {
+    .wrapper{
+        height: 100vw;
+    }
+
+    .wrapperInfo{
+        width: 100%;
+    }
+
+    .wrapperInfo h2{
+        font-size: 8vw;
+    }
+    
+    .wrapperInfo p{
+        font-size: 5vw;
+    }
+}

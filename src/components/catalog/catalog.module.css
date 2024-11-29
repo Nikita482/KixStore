@@ -1,38 +1,423 @@
+.globalWrapper{
+    min-height: 720px;
+}
+
+.header{
+    width: 90vw;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #444B58;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+.filterButton{
+    height: 60%;
+    aspect-ratio: 1 / 1;
+    color: #444B58;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+
 .wrapper{
     width: 90vw;
     height: auto;
     margin: 0 auto;
-    background-color: red;
     display: flex;
+    position: relative;
+    color: #444B58;
+    
 }
+
+
+
+
+
+
+
+
+
+
 
 .boxFilter{
     width: 25%;
+    min-width: 300px;
     height: auto;
-    background-color: blue;
     display: flex;
     justify-content: start;
 }
 .filter{
-    width: 90%;
-    height: 300px;
-    background-color: yellow;
+    width: 80%;
+    height: 600px;
+    background-color: #ffe6d9;
     position: sticky;
-    top: 0;
+    top: 10%;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 15px;
+}
+.filter h3, .filterMobule h3{
+    font-weight: normal;
+}
+
+.nameCatalog{
+    margin: 20px 0 10px 0;
+    color: #000000;
+}
+
+.filterPrice{
+    width: 100%;
+    height: 80px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid rgb(94, 94, 94);
+    border-bottom: none;
+    display: flex;
+}
+.filterPrice h3{ 
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.borderMinValue{
+    width: 1px;
+    height: 60%;
+    margin: auto 0;
+    background-color: rgb(94, 94, 94);
+    position: absolute;
+    right: 0;
+}
+
+.genderSelector{
+    width: 100%;
+    height: 70px;
+    margin-top: 20px;
+}
+.genderSelectorCheckbox{
+    display: flex;
+    justify-content: space-between;
     margin-top: 10px;
 }
+
+.boxCheckbox{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+    border: 2px solid #DBBBA9; 
+    background-color: transparent; 
+    appearance: none; 
+    position: relative;
+    border-radius: 7px; 
+}
+
+.checkbox:checked {
+    border-color: #DBBBA9; 
+}
+
+.checkbox:checked::before {
+    content: "✔"; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 20px;
+    color: #DBBBA9; 
+}
+
+
+.rangeBox{
+    width: 100%;
+    height: 10px;
+    display: flex;
+    margin-left: 1px;
+}
+
+.inputRange {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50%;
+    height: 3px;
+    background: rgb(94, 94, 94);
+    border-radius: 5px;
+    outline: none;
+  }
+  
+.inputRange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 5px;
+    height: 20px;
+    background: rgb(94, 94, 94);
+    cursor: pointer;
+}
+  
+.inputRange::-moz-range-thumb {
+    width: 5px;
+    height: 20px;
+    background: rgb(94, 94, 94);
+    cursor: pointer;
+}
+
+.filterSize{
+    width: 100%;
+    height: 200px;
+    margin: 20px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.boxSize{
+    flex: 1;
+    /* border: 1px solid #DBBBA9; */
+    display: flex;
+    flex-direction: column;
+}
+.topSize, .centerSize, .bottomSize{
+    flex: 1;
+    border: 1px solid #DBBBA9;
+    display: flex;
+}
+.boxSize button{ 
+    flex: 1;
+    color: #444B58;
+}
+.borderRightBtnSize, .borderRightBtnSizeSelected{
+    border: none;
+    border-right: 2px solid #DBBBA9;
+    background-color: transparent;
+}
+.noyBorderRightBtnSize, .noyBorderRightBtnSizeSelected{
+    border: none;
+    background-color: transparent;
+}
+.borderRightBtnSizeSelected, .noyBorderRightBtnSizeSelected{
+    background-color: #d8a283;
+}
+
+.blockBtnFilter{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.btnClose{
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #444B58;
+}
+.BtnFilter{
+    width: 100%;
+    height: 60px;
+    background-color: #444B58;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.boxFilterMobule{
+    width: 300px;
+    height: 100%;
+    display: none;
+    position: absolute;
+    left: -400px; 
+}
+
+.filterMobule{
+    width: 100%;
+    height: 600px;
+    background-color: #ffe6d9;
+    position: sticky;
+    top: 12%;
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+
+
 
 .catalog{
     width: 75%;
     height: 100%;
-    background-color: green;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .item{
     width: 30%;
-    aspect-ratio: 3 / 4;
-    background-color: grey;
+    height: auto;
     margin-top: 10px;
+}
+.foto{
+    width: 100%;
+    border-radius: 15px;
+}
+.catalogBtn{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infoCard{
+    display: flex;
+    justify-content: space-between;
+}
+.notCard{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width: 200px;
+    height: 60px;
+    font-weight: 300;
+    font-size: 16px;
+    background-color: #F14F4F;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition-duration: 300ms;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .item{
+        width: 45%;
+    }
+}
+
+@media (max-width: 800px) {
+    .filterButton{
+        display: block;
+    }
+
+    .boxFilter{
+        display: none;
+    }
+
+    .boxFilterMobule{
+        display: flex;
+    }
+
+    .catalog{
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .item p{
+        font-size: 14px;
+    }
+
+    .item h3{
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 330px) {
+    .boxFilterMobule{
+        width: 100%;
+    }
+}
+
+@media (max-width: 300px) {
+    .filterMobule h3{
+        font-size: 6vw;
+    }
+}
+
+
+
+@media (max-height: 700px) {
+    .filterMobule{
+        height: 500px;
+        padding: 10px 15px;
+    }
+    
+    .nameCatalog{
+        margin: 10px 0 10px 0;
+    }
+    
+    .BtnFilter{
+        height: 50px;
+    }
+    
+    .filterPrice, .genderSelector{
+        height: 60px;
+    }
+
+    .filterSize{
+        height: 150px;
+    }
+}
+
+@media (max-height: 590px) {
+    .filterMobule{
+        height: 410px;
+        padding: 7px 15px;
+        z-index: 1;
+    }
+
+    .nameCatalog{
+        margin: 5px 0 0px 0;
+    }
+    
+    .filterSize{
+        height: 100px;
+    }
+
+    .filterPrice, .genderSelector{
+        height: 50px;
+    }
+
+    .BtnFilter{
+        height: 40px;
+    }
+
+    .btnClose{
+        margin-top: 3px;
+    }
 }

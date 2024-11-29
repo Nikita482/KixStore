@@ -3,6 +3,10 @@
   padding: 0;
 }
 
-body {
+body{
   font-family: 'Poppins', 'Montserrat', 'Roboto', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
 }
