@@ -102,6 +102,9 @@
     width: 70%;
     height: 100%;
     display: flex;
+}
+
+.fotterInfo{
     justify-content: space-around;
 }
 
