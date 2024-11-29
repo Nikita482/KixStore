@@ -1,4 +1,4 @@
-import styles from "./App.module.css"
+// import styles from "./App.module.css"
 
 import Header from "./components/header/header"
 import Catalog from "./components/catalog/catalog"
@@ -11,9 +11,6 @@ import Footer from "./components/footer/footer"
 
 
 const App: React.FC = () => {
-
-  // сделать 2 страницу с всем товаром
-
   return(
     <>
       <Header/>
