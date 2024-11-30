@@ -246,7 +246,7 @@ const Catalog: React.FC = () => {
                                             checked={selectedGender === 'man'}
                                             onChange={() => handleGenderChange('man')}
                                         />
-                                        <label>{miniGenderMan ? <p>мужской</p> : <p>муж.</p>}</label>
+                                        <label>{miniGenderMan ? <p className={styles.genderColor}>мужской</p> : <p className={styles.genderColor}>муж.</p>}</label>
                                     </div>
 
                                     <div className={styles.boxCheckbox}>
@@ -257,7 +257,7 @@ const Catalog: React.FC = () => {
                                             checked={selectedGender === 'wom'}
                                             onChange={() => handleGenderChange('wom')}
                                         />
-                                        <label>{miniGenderWom ? <p>женский</p> : <p>жен.</p>}</label>
+                                        <label>{miniGenderWom ? <p className={styles.genderColor}>женский</p> : <p className={styles.genderColor}>жен.</p>}</label>
                                     </div>
                                 </div>
                             </div>
