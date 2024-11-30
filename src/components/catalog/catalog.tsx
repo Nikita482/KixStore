@@ -295,7 +295,6 @@ const Catalog: React.FC = () => {
 
                     <div className={styles.catalog}>
                         {filteredCards.length > 0 ? (
-                            // Отображаем отфильтрованные карточки
                             filteredCards.slice(0, displayedCardsCount).map((card) => (
                                 <div key={card.id} className={styles.item}>
                                     <img className={styles.foto} src={card.src} />
