@@ -48,3 +48,6 @@ export default tseslint.config({
   },
 })
 ```
+
+## 🌐 GitHub Pages
+[Открыть сайт](https://nikita482.github.io/testOnly/)
